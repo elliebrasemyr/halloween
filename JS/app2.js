@@ -18,7 +18,7 @@ const blurr = document.querySelector('.blurr');
 
 /*=================================================*/
 /*=================================================*/
-/*===LOAD DIREKT ON DOM===*/
+/*===LOAD DIREKT===*/
 countDown();
 
 /*=================================================*/
@@ -31,8 +31,8 @@ form.addEventListener("submit", function(event){
     if (input.value && nr.value && email.value){
 
         createNewListObject(input.value, nr.value, email.value);
-        //Load random nr for img
         
+        //Load random nr for img
         const image = document.querySelector('.hexa-pic');
         const random = Math.abs(Math.ceil(Math.random() *10 + 1) -3);
 
